@@ -7,8 +7,6 @@ export interface Props extends HTMLAttributes<HTMLDivElement | HTMLButtonElement
   label?: string
 }
 
-console.log(styled)
-
 const BtnX = styled.button`
   height: 24px;
   line-height: 14px;
