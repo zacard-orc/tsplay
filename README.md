@@ -4,10 +4,10 @@
 typescript+storybook+emotion+babel+umd
 ```
 <p>
-<img src="https://s3.ax1x.com/2021/02/10/ywLXtg.jpg" width="30%"/>
+<img src="https://s3.ax1x.com/2021/02/10/ywLXtg.jpg" width="50%"/>
 </p>
 <p>
-<img src="https://s3.ax1x.com/2021/02/10/ywLjhQ.jpg" width="30%"/>
+<img src="https://s3.ax1x.com/2021/02/10/ywLjhQ.jpg" width="50%"/>
 </p>
 
 # How to use
