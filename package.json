@@ -19,7 +19,8 @@
     "size": "size-limit",
     "analyze": "size-limit --why",
     "storybook": "start-storybook -p 6006",
-    "build:storybook": "build-storybook"
+    "build:storybook": "build-storybook",
+    "build:umd": "webpack --config ./build/build.umd.js"
   },
   "peerDependencies": {
     "react": ">=16"
@@ -66,10 +67,14 @@
     "size-limit": "^4.9.2",
     "tsdx": "^0.14.1",
     "tslib": "^2.1.0",
-    "typescript": "^4.1.4"
+    "typescript": "^4.1.4",
+    "webpack-cli": "^4.5.0"
   },
   "dependencies": {
     "@emotion/react": "^11.1.5",
-    "@emotion/styled": "^10.0.27"
+    "@emotion/styled": "^10.0.27",
+    "mini-css-extract-plugin": "^1.3.6",
+    "progress-bar-webpack-plugin": "^2.1.0",
+    "ts-loader": "^8.0.16"
   }
 }
