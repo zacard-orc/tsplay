@@ -3,6 +3,12 @@
 基于typescript的组件库
 typescript+storybook+emotion+babel+umd
 ```
+<p>
+<img src="https://imgchr.com/i/ywLXtg" width="30%"/>
+</p>
+<p>
+<img src="https://imgchr.com/i/ywLjhQ" width="30%"/>
+</p>
 
 # How to use
 ## Debug & Develop
@@ -14,4 +20,14 @@ yarn storybook
 ## Build Storybook
 ```text
 yarn build:storybook
+```
+
+## Build Es
+```text
+yarn build # tsdx build
+```
+
+## Build Umd
+```text
+yarn run build:
 ```
