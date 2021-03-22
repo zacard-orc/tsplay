@@ -2,7 +2,7 @@ import React, { FC, HTMLAttributes, ReactChild } from 'react';
 import styled from '@emotion/styled'
 
 export interface Props extends HTMLAttributes<HTMLDivElement | HTMLButtonElement> {
-  /** om 3333nozzber' */
+  /** om bbbbb' */
   children?: ReactChild;
   label?: string
 }

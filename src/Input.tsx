@@ -1,9 +1,9 @@
-import React, { FC, HTMLAttributes, ReactChild } from 'react';
+import React, {FC, HTMLAttributes, ReactChild} from 'react';
 
 export interface Props extends HTMLAttributes<HTMLDivElement | HTMLButtonElement> {
-  /** om 3333nozzber' */
-  children?: ReactChild;
-  label?: string
+    /** om 巴萨发电房' */
+    children?: ReactChild
+    label?: string
 }
 
 
@@ -14,8 +14,13 @@ export interface Props extends HTMLAttributes<HTMLDivElement | HTMLButtonElement
 /**
  * A custom Thing component. Neat!
  */
-export const RxInput: FC<Props> = ({ label='Nice' }) => {
-  return <input>{label}</input>;
+export const RxInput: FC<Props> = ({label = 'Nice'}) => {
+    return (
+        <div>
+            {label}
+            <input type="text"/>
+        </div>
+    )
 };
 
 
