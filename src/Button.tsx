@@ -34,7 +34,7 @@ const BtnX = styled.button`
 /**
  * A custom Thing component. Neat!
  */
-export const Thing: FC<Props> = ({ label='Nice' }) => {
+export const RxButton: FC<Props> = ({ label='Nice' }) => {
   return <BtnX>{label}</BtnX>;
 };
 

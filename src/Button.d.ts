@@ -7,4 +7,4 @@ export interface Props extends HTMLAttributes<HTMLDivElement | HTMLButtonElement
 /**
  * A custom Thing component. Neat!
  */
-export declare const Thing: FC<Props>;
+export declare const RxButton: FC<Props>;

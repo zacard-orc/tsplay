@@ -1,1 +1,2 @@
-export { Thing } from './Button'
+export { RxButton } from './Button'
+export { RxInput } from './Input'
