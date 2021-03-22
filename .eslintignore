@@ -1,0 +1,4 @@
+cypress
+.storybook
+build
+dist
