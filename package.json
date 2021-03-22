@@ -37,7 +37,7 @@
     "trailingComma": "es5"
   },
   "name": "tsplay",
-  "author": "linleiying_900",
+  "author": "zacard",
   "module": "dist/tsplay.esm.js",
   "size-limit": [
     {
