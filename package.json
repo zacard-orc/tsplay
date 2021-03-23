@@ -13,19 +13,23 @@
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build",
-    "tsdxtest": "tsdx test --passWithNoTests",
-    "cypress": "cypress open",
-    "cypress:all": "cypress run",
+    "tdtest": "tsdx test --passWithNoTests",
+    "cy": "cypress open",
+    "cy:all": "cypress run",
     "lint": "tsdx lint",
     "prepare": "tsdx build",
     "size": "size-limit",
     "analyze": "size-limit --why",
     "storybook": "start-storybook -p 6006",
     "build:storybook": "build-storybook",
-    "build:umd": "webpack --config ./build/build.umd.js"
+    "build:umd": "webpack --config ./build/build.umd.js",
+    "build:cjs": "cross-env OUTPUT_MODULE=commonjs babel dist/tsplay.cjs.production.min.js -d dist_cj --ignore **/__tests__",
+    "build:es": "babel dist/tsplay.cjs.production.min.js -d dist_es --ignore **/__tests__"
   },
   "peerDependencies": {
-    "react": ">=16"
+    "react": ">=16",
+    "@emotion/react": "^11.1.5",
+    "@emotion/styled": "^10.0.27"
   },
   "husky": {
     "hooks": {
@@ -52,7 +56,8 @@
     }
   ],
   "devDependencies": {
-    "@babel/core": "^7.12.13",
+    "@babel/cli": "^7.13.10",
+    "@babel/core": "^7.13.10",
     "@size-limit/preset-small-lib": "^4.9.2",
     "@storybook/addon-essentials": "^6.1.17",
     "@storybook/addon-info": "^5.3.21",
@@ -62,7 +67,7 @@
     "@types/react": "^17.0.1",
     "@types/react-dom": "^17.0.0",
     "babel-loader": "^8.2.2",
-    "cypress": "^6.8.0",
+    "cross-env": "^7.0.3",
     "husky": "^5.0.9",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
